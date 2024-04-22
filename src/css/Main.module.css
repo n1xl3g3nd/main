@@ -1,0 +1,151 @@
+
+#root {
+  min-height: 100vh; /* Задайте высоту как минимум 100% видимой высоты */
+  /* Другие стили, если необходимо */
+}
+body{
+  overflow-x: hidden;
+}
+.main_block{
+ 
+  min-height: 100vh;
+  
+}
+.startBlock{
+  justify-self: center;
+  align-self: center;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(31, 41, 55, 1);
+    min-height: 40vh;
+   
+
+}
+.titleStart {
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 40px;
+}
+.textStart{
+    
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    line-height: normal;
+    opacity: 0.8;
+}
+.blockTextStart{
+  max-width: 30vw;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+.imgInStartBlock{
+    margin-left: -30vw;
+}
+.blockTextAboutProjects{
+    max-width: 40vw;
+    word-wrap: break-word;
+}
+.textAboutProjects {
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 15px;
+    line-height: normal;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .blockAboutMe{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(17, 24, 39, 1);
+    min-height: 45vh;
+  }
+  .ProjectBlock{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(31, 41, 55, 1);
+    min-height: 40vh;
+  }
+  .colorReact{
+    color: #5B21B6;
+  }
+  .imgInStart{
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (max-width: 630px) {
+    .imgInStartBlock{
+      margin-left: -80vw;
+    }
+  }
+  .hovered {
+    /* Define styles when hovered */
+    transform: translateY(0) scale(1.3);
+    /* You can adjust the scaling factor and other properties as needed */
+  }
+  .parallaxBlock {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .startBlock, .blockAboutMe, .ProjectBlock {
+    margin-bottom: 50px; /* Примерный отступ между блоками, настройте по своему усмотрению */
+}
+@media screen and (max-width: 1200px) {
+ .blockTextStart{
+  max-width: 80vw;
+  word-wrap: break-word;
+  margin-bottom: 40px;
+}
+ .blockTextAboutProjects{
+  max-width: 80vw;
+  word-wrap: break-word;
+} 
+}
+@media screen and (max-width: 725px) {
+  .blockTextStart{
+   max-width: 80vw;
+   word-wrap: break-word;
+   margin-bottom: 40px;
+ }
+  .blockTextAboutProjects{
+   max-width: 80vw;
+   word-wrap: break-word;
+ } 
+ }
+ @media screen and (max-width: 600px) {
+  
+ .titleStart {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 35px;
+}
+ }
+ @media screen and (max-width: 600px) {
+  
+  .titleStart {
+   color: #ffffff;
+   font-family: "Inter", Helvetica;
+   font-size: 30px;
+ }
+  }
+  @media screen and (max-width: 470px) {
+  
+    .titleStart {
+     color: #ffffff;
+     font-family: "Inter", Helvetica;
+     font-size: 22px;
+   }
+    }

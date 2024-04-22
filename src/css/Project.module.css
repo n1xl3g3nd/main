@@ -1,0 +1,35 @@
+.startBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(31, 41, 55, 1);
+  min-height: 33vh;
+
+}
+.textBlock{
+  
+  max-width: 40vw;
+}
+.titleText{
+  
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 40px;
+
+}
+
+.text{
+    
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 15px;
+  line-height: normal;
+  opacity: 0.8;
+}
+@media screen and (max-width: 1000px) {
+  .textBlock{
+    
+    max-width: 70vw;
+  }
+}
